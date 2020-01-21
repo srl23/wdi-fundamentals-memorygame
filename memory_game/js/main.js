@@ -1,4 +1,18 @@
-let cardOne = "queen of diamonds";
-let cardTwo = "queen of hearts";
-let cardThree = "king of diamonds";
-let cardFour = "king of hearts";
+const cards = ["queen", "queen", "king", "king"];
+let cardsInPlay = [];
+
+let cardOne = cards[0];
+let cardTwo = cards[2];
+
+cardsInPlay.push(cardOne);
+cardsInPlay.push(cardTwo);
+
+if (cardsInPlay.length === 2) {
+	if (cardsInPlay[0] === cardsInPlay[1]) {
+		
+		alert('You have found a match!');
+	}
+	else {
+		alert('Sorry, please try again!')
+	}
+}
